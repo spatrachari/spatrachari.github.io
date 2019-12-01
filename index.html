@@ -1,64 +1,281 @@
-<!DOCTYPE html>
-<html class="homepage">
-<head>
-<title>Sneha Patrachari</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<!doctype html>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="timelineStyles.css">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600'>
 
-</head>
-<body>
+<html>
+	<head>
+      <title>My Portfolio</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/dfb23326ab.js" crossorigin="anonymous"></script>
 
-<div id="nav"><ul id="nav">
-		<li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT ME</a></li>&nbsp;
-        <li><a href="#work">WORK EXPERIENCE</a></li>&nbsp;
-        <li><a href="#projects">PROJECTS</a></li>
-</ul></div>
+   </head>
+	
+   <body>
+      <nav>
+         <ul>
+            <li><a href="#section_home">home</a></li>
+            <li><a href="#section_skills">skills</a></li>
+            <li><a href="#section_experience">work experience</a></li>
+            <li><a href="#section_projects">projects</a></li>
+            <li><a href="#section_contact">contact me</a></li>
+         </ul>
+      </nav>
+      <div id="section_home" class="section">
+         <div class="bounce-container">
+            <div class="bounce">
+               <img src="cloud2.png" height="100px" width="100px"/>
+            </div>
+         </div>
+         
+         <div class="start-container">
+            <p>sneha@cloud ~
+               <span id="input"></span>
+            </p>
+         </div>
+      </div>
+      
+      <div id="section_skills" class="section">
+         <div class="twolists">
+               <div class="column_l" style="background-color:white;">
+                  <h1 id="interests_header">My Interests</h1>
+                     <ul class="dashed">
+                     <li> User analysis </li>
+                     <li> Cognitive Science</li>
+                     <li> UX Design & Research </li>
+                     <li> Human centered computing </li>
+                     <li> Building functional prototypes </li>
+                     <li> Can't forget my current work, DevOps! </li>
+                     </ul>
+               </div>
 
-<div class="content" id="home">
-  <h1 class ="name">HELLO. I AM SNEHA.</h1>
-</div>
+               <div class="column_r" style="background-color:white;">
+                  <h1 id="skills_header">My Skills</h1>
+      
+                  <p>Python, Ansible</p>
+                  <div class="tech">
+                        <div class="skill python"></div>
+                  </div>
+                  <p>Linux, Shell Scripting</p>
+                  <div class="tech">
+                        <div class="skill shell"></div>
+                  </div>
+                  <p>Kubernetes, Docker, Jenkins</p>
+                  <div class="tech">
+                        <div class="skill k8s"></div>
+                  </div>
+                  <p>AWS, Terraform</p>
+                  <div class="tech">
+                        <div class="skill aws"></div>
+                  </div>
+               </div>
+         </div>
+   </div>
 
-<article id="about">
-<div class="about1">
-	<h1 class ="aboutheader">ABOUT ME</h1>
-	<div class ="yolo">
-		<p> <img class="img-circle" src="snegu.jpg" alt="Sneha Patrachari" style="width:250px;height:250px;float:left">
-		Well, hello there! I am Sneha Patrachari,a recent graduate in computer science and cognitive science. I have a passion for building and developing things! I love learning new things and meeting new people along the way! Feel feel to reach out to me! 
-		</p>
-	</div>
-</div>
-</article>
+      <!-- <h1 id="work">Work Experience</h1> -->
+      <!--<div><link rel="import" href="/Users/spatrachari/Downloads/timeline-8/index.html"></div>-->
+      <div id="section_experience" class="section">
+            <h1 id="history_header">So, how did I get here?</h1>
+            <div class="history">
+                  <div class="timeline">
+                        <div class="entry">
+                          <div class="title">
+                            <h3>Mar 2019 - Present</h3>
+                            <p>PresenceLearning</p>
+                          </div>
+                          <div class="body">
+                            <p>Software Engineer - DevOps</p>
+                            <ul>
+                              <li>Expand current ChatOps workflow by developing automation</li>
+                              <li>Troubleshoot failed container builds and service deployments</li>
+                              <li>Adapt AWS AMI build process to capture real time data backups</li>
+                            </ul>
+                          </div>
+                        </div>
+                      <div class="entry">
+                        <div class="title">
+                          <h3>Sep 2017 - Dec 2018</h3>
+                          <p>Workday</p>
+                        </div>
+                        <div class="body">
+                          <p>Senior Associate Site Reliability Engineer</p>
+                          <ul>
+                            <li>Configured deployment jobs using Bash scripting</li>
+                            <li>Queried shared database to monitor live customer states</li>
+                            <li>Optimized shell scripts to refresh micro services in sandbox envs</li>
+                          </ul>
+                          <p>Associate Reliability Engineer</p>
+                          <ul>
+                              <li>Automated operations to process incoming tenant requests </li>
+                              <li>Built out disaster recovery servers with new micro services</li>
+                              <li>Deployed and troubleshooted large-scale weekly deployments</li>
+                            </ul>
+                        </div>
+                      </div>
+                      <div class="entry">
+                        <div class="title">
+                          <h3>Jan 2016 – Jun 2017</h3>
+                          <p>Center for Neuroscience<br>University of California, Davis</p>
+                        </div>
+                        <div class="body">
+                          <p>Undergraduate Student Researcher - Computational Neuroscience</p>
+                          <ul>
+                            <li>Devised comp. frameworks to conduct statistical analysis of data</li>
+                            <li>Observed individual’s neural information processing behavior</li>
+                            <li>Interfaced software with hardware to capture user interaction</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="entry">
+                        <div class="title">
+                          <h3>Jun 2016 – Sep 2016</h3>
+                          <p>Verizon<br>Internet of Things Platform</p>
+                        </div>
+                        <div class="body">
+                          <p>Product and Software Development Intern</p>
+                          <ul>
+                            <li>Developed performance test suite and benchmark framework</li>
+                            <li>Remotely invoked test scripts through a Dockerized web service</li>
+                            <li>Developed a gui to enable procedural and feature testing</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="entry">
+                          <div class="title">
+                            <h3>Apr 2016 – Sep 2016</h3>
+                            <p>NEAT/ICAM Laboratory<br>University of California, Davis</p>
+                          </div>
+                          <div class="body">
+                            <p>Student Web Developer</p>
+                            <ul>
+                              <li>Created web app on new domains using existing content</li>
+                              <li>Consolidated content from multiple source onto site and server</li>
+                              <li>Updated web page designs to increased functionality</li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+            </div>
+      </div>
+		
+      
+      <div id="section_projects" class="section projects1">
+         <div class="twolists">
+            <div class="column_l" style="background-color:white;">
+            <div class="image-align">
+               <img class="book" src="open-book.png" height="200px" width="200px"/>
+            </div>
+            </div>
+            <div class="column_r" style="background-color:white;">
+                  <h1 class="projects-header">A Few School Projects...</h1>
+                  <h3 class="project-title">Song Search Query | Data Structures Class Project</h3>
+                  <p class="project-description">Worked in a partnership and used advanced C++ knowledge to develop a program that performs query 
+                  specific searches within a large database of songs. The program completes partial and whole word 
+                  searches within song names, artist names, album names, and song ID numbers to narrow search results
+                  to information relevant to the user. We implemented hash tables of pointers to enhance the efficiency
+                  of the find operation; we also created deep copies of object to later return all song information 
+                  on program completion. To debug, we used the gdb tool.</p>
+   
+                  <h3 class="project-title">E Language Parser | Java Programming Class Project</h3>
+                  <p class="project-description">Worked with three additional students to create a java program that converts the arbitrary E language 
+                  to C. We encoded the original E language grammar to scan and tokenize the elements in our test files.
+                  By parsing though the input language to validate variable names through searches within the local and 
+                  global scopes of our symbol table, we translated the tokens and variable names into the appropriate 
+                  C equivalent code</p>
+   
+                  <h3 class="project-title">Machine Learning Digit Detection | Applied Linear Algebra Programming Project</h3>
+                  <p class="project-description">Pattern recognition seeks to perform computations to yield higher recognition rates for 
+                  the visual patterns of interest. In our algorithm we used a data set of handwritten digits from the U.S. 
+                  Postal Service Database. Both the arrays of training data, trainpatterns and testpatterns, are image 
+                  reconstructions represented by 16x16 pixel intensities. I constructed an alogrithm to iteratively learn 
+                  and classify these handwritten digits.</p>
+            </div>
+         </div>
+      </div>
 
-<article id="work">
-<div class="work1">
-	<h1 class ="workheader">WORK EXPERIENCE</h1>	
-</div>
+      <div class="section projects2">
+         <div class="twolists">
+            <div class="column_l" style="background-color:white;">
+            <h1 class="projects-header">Projects for Fun!</h1>
+            <h3 class="project-title">Space Updates Amazon Echo App | HackDavis</h3>
+            <p class="project-description">With a team of two other members at a Hackathon, we developed a lambda application on AWS using the NASA  
+               and Twilio API to allow users to prompt an Amazon Echo for daily alerts and random facts about space. 
+               We encoded different speech responses in the application, so the user could deliver the Echo more insight
+               into what information they'd like to recieve and what number they'd like the information sent to. 
+               To inform the user about the status of the request, and it's validity, we programmed different responses 
+               the Echo device would trigger.   
+            </p>
+   
+            <h3 class="project-title">Organization Website | Davis Dheem Tana</h3>
+            <p class="project-description">Our wish to educate users about our organization statement encouraged me to redesign the webpage 
+               using HTML and CSS to facilitate user experience and interaction. Users could donate
+               and buy tickets for our organization's hosted events; it was so rewarding to see that technology could
+               enable us to serve the underprivledged. 
+            </p>
+            </div>
+            <div class="column_r" style="background-color:white;">
+            <div class="image-align">
+                  <img class="beachball" src="beachball-color.png" height="200px" width="200px"/>
+            </div>
+            </div>
+         </div>
+      </div>
 
-<div id="workcontent">
-	<h2 class="workTitle">Industry Experience</h2>
-    <a href="verizon.html"><img src="verizon.png" alt="Verizon" class="images" /></a>
-    <a href="icam.html"><img src="icam.png" alt="ICAM" class="images"></a>
-    <a href="ddt.html"><img src="ddtlogo.jpg" alt="DDT" class="images"></a>
-    <h2 class="workTitle">Other Work</h2>
-    <a href="asucd.html"><img src="asucd.png" alt="" class="images" style="background-color:white;"></a>
-    <a href="calpirg.html"><img src="Calpirg.jpg" alt="" class="images"></a>
+      <div id="section_contact" class="section">
+         <div class = "contact">
+            <h1>Feel free to reach out!</h1>
+            <div class="contact-icons">
+                  <a target="_blank" href="https://linkedin.com/in/snehapatrachari/">
+                     <i class="fab fa-linkedin fa-4x"></i>
+                  </a>
+                  <a target="_blank" href="https://github.com/spatrachari">
+                     <i class="fab fa-github-square fa-4x"></i>
+                  </a>
+                  <a id="email_trigger">
+                     <i class="fas fa-envelope-square fa-4x"></i>
+                  </a>
+            </div>
+         </div>
+         <div id="contact_form" class="hidden">
+               <form
+                  action="https://formspree.io/xledbnda"
+                  method="POST"
+               >
+               <div class="form-row">
+                  <label>
+                     <span class="input-label">your name:</span>
+                     <input type="text" name="name">
+                  </label>
+                  <label>
+                     <span class="input-label">your email:</span>
+                     <input type="text" name="_replyto">
+                  </label>
+               </div>
+               <div class="form-row">
+                  <label>
+                     <span class="input-label">your message:</span>
+                     <textarea name="message" rows="4"></textarea>
+                  </label>
+               </div>
+               <button type="submit">send</button>
+             </form>
+         </div>
+      </div>
 
-</div>
-
-</article>
-
-
-<article id="projects">
-	<h1 class ="projectheader">PROJECTS</h1>
-	<div id="projectButtons">
-	<a href="songsearch.html"><p class="projectbutton" id="columnleft">SONG SEARCH QUERY</p></a>
-	<a href="langparser.html"><p class="projectbutton" id="columncenter">E-LANGUAGE PARSER</p></a>
-	<a href="machinelearn.html"><p class="projectbutton" id="columnright">MACHINE LEARNING DIGIT DETECTION</p></a>
-	</div>
-</article>
-
-
-
-</body>
+    
+      <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+	</body>
 </html>
 
+
+<!--<h3>Space Updates Amazon Echo App</h3>
+         <p>With a team of two other members at a Hackathon, we utilized the NASA api to develop an amazon app that will send space updates 
+            everyday to an individual's phone.The echo is also able to provide a fact of the day and will provide more 
+            insights what is limited in a simple text message.</p>-->
+
+
+
+            <!--<div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+<!--<div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->

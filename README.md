@@ -1,1 +1,0 @@
-# spatrachari.github.io
